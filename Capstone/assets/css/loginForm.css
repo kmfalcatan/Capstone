@@ -199,7 +199,6 @@
 
 .subLoginFormContainer{
     outline: red dashed 1px;
-    height: 18.3rem;
     width: 24rem;
     border-radius: 0.5rem;
     background-color: rgb(233,233,233);
@@ -239,7 +238,6 @@
 
 .inputContainer{
     outline: red dashed 1px;
-    height: 14.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,6 +283,19 @@
 
 .loginButton1:active{
     transform: scale(0.9);
+}
+
+.errorContainer{
+    outline: red dashed 1px;
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(222,27,27);
+}
+
+.errorMessage{
+    padding-left: 1rem;
 }
 
 /*tablet*/
