@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    outline: red dashed 1px;
+    height: 100vh;
+    background-color: rgb(43,43,43);
+}
+
+.headerContainer{
+    outline: red dashed 1px;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubarContainer{
+    padding-top: 2px;
+    width: 3.125rem;
+    height: 3rem;
+}
+
+.line{
+    border: solid 0.125rem;
+    width: 1.563rem;
+    margin-bottom: 0.313rem;
+    margin-top: 0.5rem;
+    margin-left: 0.563rem;
+    border-color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.change .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 0.625rem);
+}
+
+.change .line:nth-child(2) {
+    opacity: 0;
+}
+
+.change .line:nth-child(3) {
+    transform: rotate(45deg) translate(-0.438rem, -0.5rem);
+}
+
+.logoContainer{
+    outline: red dashed 1px;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subLogoContainer{
+    height: 3rem;
+    width: 3rem;
+    outline: red dashed 1px;
+    border-radius: 10rem;
+    background-color: rgb(222,27,27);
+}
+
+.subMenubarContainer{
+    outline: red dashed 1px;
+    width: 10rem;
+    background-color: rgb(233,233,233);
+    border-radius: 0 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -10rem;
+}
+
+.fadeIn{
+    animation: sideIn 0.6s ease forwards
+}
+
+.barContainer, .barContainer1{
+    outline: red dashed 1px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    color: rgb(43,43,43);
+}
+
+.barContainer:hover{
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+}
+
+.barContainer1:hover{
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    border-radius: 0 0 0.5rem 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes sideIn {
+    from{
+
+    } to{
+        left: 0;
+    }
+}
+
+.collegeContainer{
+    outline: red dashed 1px;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5rem;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.subCollegeContainer{
+    outline: red dashed 1px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10rem;
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.subCollegeContainer1{
+    outline: red dashed 1px;
+    height: 2.5rem;
+    border-radius: 10rem;
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.courseContainer{
+    outline: red dashed 1px;
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subCourseContainer{
+    height: 97%;
+    width: 90%;
+    outline: red dashed 1px;
+    border-radius: 1rem;
+    background-color: rgb(222,27,27);
+    overflow: auto;
+}
+
+.courseListContainer{
+    outline: white dashed 1px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233,233,233);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.course{
+    outline: white dashed 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    padding: 0 1rem;
+}
+
+.subCourse{
+    outline: white dashed 1px;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    background-color: rgb(233,233,233);
+    color: rgb(43,43,43);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.subCourse:hover{
+    background-color: transparent;
+    border: solid rgb(233,233,233) 1px;
+    color: rgb(233,233,233);
+}
+
+.subCourse:active{
+    transform: scale(0.9);
+}
+
+.courseInfoContainer{
+    outline: red dashed 1px;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subCourseInfoContainer{
+    outline: red dashed 1px;
+    width: 23rem;
+    border-radius: 0.5rem;
+    background-color: rgb(233,233,233);
+}
+
+.courseName{
+    outline: red dashed 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.subCourseName{
+    outline: red dashed 1px;
+    width: 90%;
+    border-radius: 0.5rem;
+    border: solid rgb(43,43,43) 1px;
+    background-color: rgb(217,217,217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:  center;
+    font-size: 1.2rem;
+}
+
+.courseDescriptionContainer{
+    outline: red dashed 1px;
+    width: 90%;
+    border-radius: 0.5rem;
+    border: solid rgb(43,43,43) 1px;
+    background-color: rgb(217,217,217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:  center;
+    font-size: 1.2rem;
+}
+
+.closeContainer{
+    outline: red dashed 1px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.closeButton{
+    height: 2rem;
+    width: 5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px rgb(43,43,43);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.closeButton:hover{
+    background-color: transparent;
+    border: solid rgb(222,27,27) 1px;
+    color: rgb(222,27,27);
+}
+
+.closeButton:active{
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+/*tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .subCollegeContainer{
+        margin-left: 4%;
+    }
+}
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+    .subCollegeContainer{
+        margin-left: 4%;
+    }
+}
+
+/*pc*/
+@media only screen and (min-width: 1441px){
+    .subCollegeContainer{
+        margin-left: 4.5%;
+    }
+}

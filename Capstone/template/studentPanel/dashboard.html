@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Capstone/assets/css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class='menubarContainer' onclick='toggleMenu(this)'>
+                <div class='line'></div>
+                <div class='line'></div>
+                <div class='line'></div>
+            </div>
+
+            <div class="logoContainer">
+                <div class="subLogoContainer">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="subMenubarContainer">
+            <a href="/Capstone/template/studentPanel/loginForm.html">
+                <div class="barContainer">
+                    <p>Back</p>
+                </div>
+            </a>
+
+            <div onclick="feedback()" class="barContainer1">
+                <p>Feedback</p>
+            </div>
+        </div>
+
+        <div class="textContainer">
+            <p>Enter your grades and CET result</p>
+        </div>
+
+        <div class="inputContainer">
+            <div class="gradesContainer">
+                <input class="grades" type="number" placeholder="Enter your average grades:" required>
+            </div>
+
+            <div class="gradesContainer">
+                <input class="grades" type="number" placeholder="Enter your overall CET result:" required>
+            </div>
+        </div>
+
+        <div class="textContainer1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptates iste voluptate facere vitae libero dolore officiis saepe quae possimus quos distinctio ducimus adipisci asperiores incidunt sequi fugit! Modi, blanditiis?</p>
+        </div>
+
+        <div class="instructionContainer">
+            <div class="subInstructionContainer">
+                <p>Dislike | Neutral | Like</p>
+            </div>
+        </div>
+
+        <div class="questionContainer">
+            <div class="subQuestionContainer">
+                <div class="question">
+                    <p>1. Do you regularly make new friends</p>
+                </div>
+
+                <div class="choiceContainer">
+                    <div class="subChoiceContainer">
+                        <p>Dislike</p>
+                    </div>
+
+                    <div class="subChoiceContainer">
+                        <div class="answer"></div>
+                        <div class="answer"></div>
+                        <div class="answer"></div>
+                    </div>
+                    
+                    <div class="subChoiceContainer">
+                        <p>Dislike</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submitContainer">
+                 <button onclick="course()" class="submitButton">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="courseContainer" style="display: none;">
+        <div class="courseContainer" style="background-color: none;">
+            <div class="subCourseContainer">
+                <div class="closeContainer">
+                    <div class="subCloseContainer">
+                        <img onclick="course()" class="closeButton" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+    
+                    <div class="textContainer2">
+                        <p>List of courses</p>
+                    </div>
+                </div>
+    
+                <div class="recommendContainer">
+                    <div class="subRecommendContainer">
+                        <div class="recommend">
+                            <p>Bachelor Science of Information Technology</p>
+                        </div>
+    
+                        <div class="addButton">
+                            <button onclick="addlist()" class="addtolist">Add to list</button>
+                        </div>
+                    </div>
+    
+                    <div class="subRecommendContainer">
+                        <div class="recommend">
+                            <p>Bachelor Science of Information Technology</p>
+                        </div>
+    
+                        <div class="addButton">
+                            <button onclick="addlist()" class="addtolist">Add to list</button>
+                        </div>
+                    </div>
+    
+                    <div class="subRecommendContainer">
+                        <div class="recommend">
+                            <p>Bachelor Science of Information Technology</p>
+                        </div>
+    
+                        <div class="addButton">
+                            <button onclick="addlist()" class="addtolist">Add to list</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="courseInfoContainer" style="display: none;">
+        <div class="courseInfoContainer" style="background-color: none;">
+            <div class="subCourseInfoContainer">
+                <div class="closeContainer">
+                    <div class="subCloseContainer">
+                        <img onclick="feedback()" class="closeButton" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+                </div>
+
+                <div class="courseName">
+                    <input type="text" class="subCourseName" placeholder="Enter your name:">
+    
+                    <textarea class="courseDescriptionContainer" placeholder="Enter your feedback:" name="" id=""></textarea>
+    
+                    <div class="closeContainer1">
+                        <button class="closeButton1">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="addListContainer" style="display: none;">
+        <div class="addListContainer" style="background-color: none;">
+            <div class="subAddListContainer">
+                <div class="closeContainer" style="margin-bottom: 1rem;">
+                    <div class="subCloseContainer">
+                        <img onclick="addlist()" class="closeButton" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="infoContainer">
+                    <div class="subInfoContainer">
+                        <input class="info" type="text" placeholder="Enter your name">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <input class="info" type="email" placeholder="Enter your email">
+                    </div>
+    
+                    <div class="subInfoContainer" style="gap: 1rem;">
+                        <input class="info" type="number" style="width: 10rem;" placeholder="Enter grade avg:">
+                        <input class="info" type="number"style="width: 10rem;" placeholder="Enter CET overall:">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <input class="info" type="number" placeholder="Enter your contact no.:">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <input class="info" type="text" placeholder="Enter your address">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <input class="info" type="text" placeholder="Course" style="overflow: auto;">
+                    </div>
+                </div>
+
+                <div class="buttonContainer">
+                    <button class="closeButton1">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Capstone/assets/js/exploreCourses.js"></script>
+    <script src="/Capstone/assets/js/dashboard.js"></script>
+</body>
+</html>

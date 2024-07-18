@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Capstone/assets/css/exploreCourses.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class='menubarContainer' onclick='toggleMenu(this)'>
+                <div class='line'></div>
+                <div class='line'></div>
+                <div class='line'></div>
+            </div>
+
+            <div class="logoContainer">
+                <div class="subLogoContainer">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="subMenubarContainer">
+            <a href="/Capstone/template/studentPanel/loginForm.html">
+                <div class="barContainer">
+                    <p>Back</p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="barContainer1">
+                    <p>Get Start</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="collegeContainer">
+            <div class="subCollegeContainer">
+                <p>All</p>
+            </div>
+
+            <select class="subCollegeContainer1" name="" id="">
+                <option value="">Choose a college</option>
+                <option value="">College of computing studies</option>
+                <option value="">College of Engineering</option>
+            </select>
+        </div>
+
+        <div class="courseContainer">
+            <div class="subCourseContainer">
+                <div class="courseListContainer">
+                    <p>List of courses</p>
+                </div>
+
+                <div class="course">
+                    <div onclick="course()" class="subCourse">
+                        <p>Bachelor Science of Information Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="courseInfoContainer" style="display: none;">
+        <div class="courseInfoContainer" style="background-color: none;">
+            <div class="subCourseInfoContainer">
+                <div class="courseName">
+                    <div class="subCourseName">
+                        <p>Bachelor Science of Information Technology</p>
+                    </div>
+    
+                    <div class="courseDescriptionContainer">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque beatae praesentium delectus ducimus. Delectus quia dignissimos quaerat, itaque nihil repellendus rem facilis ut harum rerum ratione repudiandae soluta pariatur.</p>
+                    </div>
+    
+                    <div class="closeContainer">
+                        <button onclick="course()" class="closeButton">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Capstone/assets/js/exploreCourses.js"></script>
+</body>
+</html>
