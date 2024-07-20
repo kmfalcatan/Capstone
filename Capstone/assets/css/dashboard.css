@@ -9,13 +9,11 @@ body{
 }
 
 .container{
-    outline: red dashed 1px;
     background-color: rgb(43,43,43);
     padding-bottom: 1rem;
 }
 
 .headerContainer{
-    outline: red dashed 1px;
     height: 4rem;
     display: flex;
     flex-direction: row;
@@ -56,7 +54,6 @@ body{
 }
 
 .logoContainer{
-    outline: red dashed 1px;
     height: 4rem;
     width: 4rem;
     margin-right: 1rem;
@@ -68,13 +65,11 @@ body{
 .subLogoContainer{
     height: 3rem;
     width: 3rem;
-    outline: red dashed 1px;
     border-radius: 10rem;
     background-color: rgb(222,27,27);
 }
 
 .subMenubarContainer{
-    outline: red dashed 1px;
     width: 10rem;
     background-color: rgb(233,233,233);
     border-radius: 0 0 0.5rem 0;
@@ -89,7 +84,6 @@ body{
 }
 
 .barContainer, .barContainer1{
-    outline: red dashed 1px;
     height: 3rem;
     display: flex;
     align-items: center;
@@ -124,7 +118,6 @@ a{
 }
 
 .textContainer{
-    outline: red dashed 1px;
     height: 6rem;
     display: flex;
     justify-content: center;
@@ -136,7 +129,6 @@ a{
 }
 
 .inputContainer{
-    outline: red dashed 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,7 +138,6 @@ a{
 }
 
 .gradesContainer{
-    outline: red dashed 1px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -170,7 +161,6 @@ input::placeholder{
 }
 
 .textContainer1{
-    outline: red dashed 1px;
     margin-top: 1rem;
     font-size: 1.2rem;
     color: rgb(233,233,233);
@@ -179,7 +169,6 @@ input::placeholder{
 }
 
 .instructionContainer{
-    outline: red dashed 1px;
     height: 3rem;
     margin-top: 1rem;
     display: flex;
@@ -188,7 +177,6 @@ input::placeholder{
 }
 
 .subInstructionContainer{
-    outline: red dashed 1px;
     height: 100%;
     width: 90%;
     border-radius: 0.5rem;
@@ -201,7 +189,6 @@ input::placeholder{
 }
 
 .questionContainer{
-    outline: red dashed 1px;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -212,14 +199,12 @@ input::placeholder{
 }
 
 .subQuestionContainer{
-    outline: red dashed 1px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
 .question{
-    outline: red dashed 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +214,6 @@ input::placeholder{
 }
 
 .choiceContainer{
-    outline: red dashed 1px;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -251,7 +235,6 @@ input::placeholder{
 }
 
 .answer{
-    outline: red dashed 1px;
     height: 1.2rem;
     width: 1.2rem;
     border-radius: 5rem;
@@ -271,7 +254,6 @@ input::placeholder{
 }
 
 .submitContainer{
-    outline: red dashed 1px;
     height: 3rem;
     width: 100%;
     display: flex;
@@ -303,7 +285,6 @@ input::placeholder{
 }
 
 .courseContainer{
-    outline: red dashed 1px;
     position: absolute;
     top: 0;
     height: 100%;
@@ -315,21 +296,18 @@ input::placeholder{
 }
 
 .subCourseContainer{
-    outline: red dashed 1px;
     width: 90%;
     border-radius: 0.5rem;
     background-color: rgb(233,233,233);
 }
 
 .closeContainer{
-    outline: red dashed 1px;
     height: 3rem;
     display: flex;
     flex-direction: row;
 }
 
 .subCloseContainer{
-    outline: red dashed 1px;
     height: 100%;
     width: 3rem;
     display: flex;
@@ -343,7 +321,6 @@ input::placeholder{
 }
 
 .textContainer2{
-    outline: red dashed 1px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -353,7 +330,6 @@ input::placeholder{
 }
 
 .recommendContainer{
-    outline: red dashed 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -363,7 +339,6 @@ input::placeholder{
 }
 
 .subRecommendContainer{
-    outline: red dashed 1px;
     display: flex;
     flex-direction: row;
     border-radius: 10rem;
@@ -372,7 +347,6 @@ input::placeholder{
 }
 
 .recommend{
-    outline: red dashed 1px;
     font-size: 1.2rem;
     text-align: center;
     display: flex;
@@ -382,7 +356,6 @@ input::placeholder{
 }
 
 .addButton{
-    outline: red dashed 1px;
     width: 8rem;
     display: flex;
     align-items: center;
@@ -410,7 +383,6 @@ input::placeholder{
 }
 
 .courseInfoContainer{
-    outline: red dashed 1px;
     position: absolute;
     top: 0;
     height: 100vh;
@@ -422,14 +394,12 @@ input::placeholder{
 }
 
 .subCourseInfoContainer{
-    outline: red dashed 1px;
     width: 23rem;
     border-radius: 0.5rem;
     background-color: rgb(233,233,233);
 }
 
 .courseName{
-    outline: red dashed 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,7 +409,6 @@ input::placeholder{
 }
 
 .subCourseName{
-    outline: red dashed 1px;
     width: 90%;
     height: 3rem;
     border-radius: 0.5rem;
@@ -461,7 +430,6 @@ input::placeholder{
 }
 
 .courseDescriptionContainer{
-    outline: red dashed 1px;
     width: 90%;
     height: 15rem;
     border-radius: 0.5rem;
@@ -472,7 +440,6 @@ input::placeholder{
 }
 
 .closeContainer1{
-    outline: red dashed 1px;
     height: 4rem;
     width: 100%;
     display: flex;
@@ -506,7 +473,6 @@ input::placeholder{
 }
 
 .addListContainer{
-    outline: red dashed 1px;
     position: absolute;
     top: 0;
     height: 100%;
@@ -518,14 +484,12 @@ input::placeholder{
 }
 
 .subAddListContainer{
-    outline: red dashed 1px;
     width: 24rem;
     background-color: rgb(233,233,233);
     border-radius: 0.5rem;
 }
 
 .infoContainer{
-    outline: red dashed 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -534,7 +498,6 @@ input::placeholder{
 }
 
 .subInfoContainer{
-    outline: red dashed 1px;
     height: 3rem;
     width: 100%;
     display: flex;
@@ -553,7 +516,6 @@ input::placeholder{
 }
 
 .buttonContainer{
-    outline: red dashed 1px;
     height: 3rem;
     display: flex;
     align-items: center;
