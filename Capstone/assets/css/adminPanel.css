@@ -4,9 +4,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container{
-    height: 100vh;
+body{
     background-color: rgb(43,43,43);
+}
+
+.container{
+    background-color: rgb(43,43,43);
+    padding-bottom: 1rem;
 }
 
 .headerContainer{
@@ -113,136 +117,24 @@ a{
     }
 }
 
-.collegeContainer{
+.filterContainer{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer{
     height: 3rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 0.5rem;
-    gap: 1rem;
-    overflow: auto;
-}
-
-.subCollegeContainer{
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 10rem;
-    background-color: rgb(222,27,27);
-    color: rgb(233,233,233);
-    display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px black;
-    border: solid rgb(222,27,27) 1px;
-}
-
-.subCollegeContainer:hover{
-    background-color: transparent;
-    border: solid rgb(222,27,27) 1px;
-    color: rgb(222,27,27);
-}
-
-.subCollegeContainer:active{
-    transform: scale(0.9);
-    box-shadow: none;
-}
-
-.subCollegeContainer1{
-    height: 2.5rem;
-    border-radius: 10rem;
-    background-color: rgb(222,27,27);
-    color: rgb(233,233,233);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    padding: 0 0.5rem;
-    cursor: pointer;
-    transition: all 0.15s;
-    box-shadow: 5px 5px 10px black;
-}
-
-.courseContainer{
-    height: 86vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.subCourseContainer{
-    height: 97%;
-    width: 90%;
-    border-radius: 1rem;
-    background-color: rgb(222,27,27);
-    overflow: auto;
-}
-
-.courseListContainer{
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(233,233,233);
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
-}
-
-.course{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; 
-    padding: 0 1rem;
-}
-
-.subCourse{
-    border-radius: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0.5rem;
-    background-color: rgb(233,233,233);
-    color: rgb(43,43,43);
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    transition: all 0.15s;
-    box-shadow: 5px 5px 10px rgb(43,43,43);
-}
-
-.subCourse:hover{
-    background-color: transparent;
-    border: solid rgb(233,233,233) 1px;
     color: rgb(233,233,233);
 }
 
-.subCourse:active{
-    transform: scale(0.9);
-    box-shadow: none;
-}
-
-.courseInfoContainer{
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.534);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.subCourseInfoContainer{
-    width: 23rem;
-    border-radius: 0.5rem;
-    background-color: rgb(233,233,233);
-}
-
-.courseName{
+.subFilterContainer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,80 +143,228 @@ a{
     flex-direction: column;
 }
 
-.subCourseName{
-    width: 90%;
-    border-radius: 0.5rem;
-    border: solid rgb(43,43,43) 1px;
-    background-color: rgb(217,217,217);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align:  center;
-    font-size: 1.2rem;
-}
-
-.courseDescriptionContainer{
-    width: 90%;
-    border-radius: 0.5rem;
-    border: solid rgb(43,43,43) 1px;
-    background-color: rgb(217,217,217);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align:  center;
-    font-size: 1.2rem;
-}
-
-.closeContainer{
-    height: 4rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.closeButton{
+.searchBar{
     height: 2rem;
-    width: 5rem;
-    margin-right: 1rem;
+    width: 20rem;
+    border: none;
+    background-color: rgb(222,27,27);
     border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    align-items: center;
+    font-size: 1.2rem;
+    color: rgb(217,217,217);
+    box-shadow: 5px 5px 10px black;
+}
+
+.searchBar::placeholder{
+    color: rgb(217,217,217);
+}
+
+.filter{
+    height: 2rem;
     background-color: rgb(222,27,27);
     color: rgb(233,233,233);
     border: none;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 0.5rem;
     font-size: 1.2rem;
-    box-shadow: 5px 5px 10px rgb(43,43,43);
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.subListContainer{
+    background-color: rgb(222,27,27);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.nameContainer{
+}
+
+.subNameContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(233,233,233);
+    font-weight: bold;
+}
+
+.averageContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.grades{
+    font-size: 1.2rem;
+    color: rgb(233,233,233);
+}
+
+.viewButtonContainer{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewButton{
+    background-color: rgb(233,233,233);
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.15s;
+    box-shadow: 5px 5px 10px black;
 }
 
-.closeButton:hover{
+.viewButton:hover{
     background-color: transparent;
-    border: solid rgb(222,27,27) 1px;
-    color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    border: solid rgb(233,233,233) 1px;
 }
 
-.closeButton:active{
+.viewButton:active{
     transform: scale(0.9);
     box-shadow: none;
 }
 
+.addListContainer{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subAddListContainer{
+    width: 24rem;
+    background-color: rgb(233,233,233);
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.infoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subInfoContainer{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    width: 90%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: solid rgb(43,43,43) 1px;
+    background-color: rgb(217,217,217);
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subInfoContainer1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info1{
+    width: 90%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: solid rgb(43,43,43) 1px;
+    background-color: rgb(217,217,217);
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonContainer{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.closeContainer{
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.subCloseContainer{
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeButton{
+    height: 50%;
+    cursor: pointer;
+}
+
 /*tablet*/
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .subCollegeContainer{
-        margin-left: 4%;
+@media only screen and (min-width: 601px){
+    .subListContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
     }
-}
 
-/*laptop*/
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-    .subCollegeContainer{
-        margin-left: 4%;
+    .subFilterContainer{
+        flex-direction: row;
     }
-}
 
-/*pc*/
-@media only screen and (min-width: 1441px){
-    .subCollegeContainer{
-        margin-left: 4.5%;
+    .averageContainer{
+        justify-content: left;
+    }
+
+    .filterContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .subFilterContainer{
+        margin: 0;
     }
 }
