@@ -225,7 +225,7 @@ a{
     box-shadow: none;
 }
 
-.addListContainer{
+.addListContainer, .addListContainer1{
     position: absolute;
     top: 0;
     height: 100%;
@@ -321,6 +321,40 @@ a{
 .closeButton{
     height: 50%;
     cursor: pointer;
+}
+
+.closeContainer1{
+    outline: red dashed 1px;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    align-items: center;
+}
+
+.closeButton1{
+    height: 100%;
+    width: 5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.closeButton1:hover{
+    background-color: transparent;
+    border: solid rgb(222,27,27) 1px;
+    color: rgb(222,27,27);
+}
+
+.closeButton1:active{
+    transform: scale(0.9);
 }
 
 /*tablet*/

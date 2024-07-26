@@ -42,3 +42,13 @@ function addlist(){
         addlistButton .style.display = 'none'
     }
 }
+
+function addlist1(){
+    const addlistButton = document.querySelector(' .addListContainer1');
+
+    if(addlistButton.style.display === 'none'){
+        addlistButton.style.display = 'block';
+    } else{
+        addlistButton .style.display = 'none'
+    }
+}
