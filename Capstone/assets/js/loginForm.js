@@ -7,3 +7,13 @@ function login(){
         loginButton .style.display = 'none'
     }
 }
+
+function error(){
+    const errorButton = document.querySelector(' .errorContainer');
+
+    if(errorButton.style.display === 'none'){
+        errorButton.style.display = 'block';
+    } else{
+        errorButton .style.display = 'none'
+    }
+}
