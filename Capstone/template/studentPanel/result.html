@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="/Capstone/assets/css/dashboard.css">
+    
+    <link rel="stylesheet" href="/Capstone/assets/css/result.css">
 </head>
 <body>
     <div class="container">
@@ -24,7 +24,7 @@
         </div>
 
         <div class="subMenubarContainer">
-            <a href="/Capstone/template/studentPanel/loginForm.html">
+            <a href="/Capstone/template/studentPanel/dashboard.html">
                 <div class="barContainer">
                     <p>Back</p>
                 </div>
@@ -35,55 +35,69 @@
             </div>
         </div>
 
-        <div class="textContainer">
-            <p>Enter your grades and CET result</p>
-        </div>
-
-        <div class="inputContainer">
-            <div class="gradesContainer">
-                <input class="grades" type="number" placeholder="Enter your average grades:" required>
-            </div>
-
-            <div class="gradesContainer">
-                <input class="grades" type="number" placeholder="Enter your overall CET result:" required>
-            </div>
-        </div>
-
-        <div class="textContainer1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptates iste voluptate facere vitae libero dolore officiis saepe quae possimus quos distinctio ducimus adipisci asperiores incidunt sequi fugit! Modi, blanditiis?</p>
-        </div>
-
-        <div class="instructionContainer">
-            <div class="subInstructionContainer">
-                <p>Dislike | Neutral | Like</p>
-            </div>
-        </div>
-
-        <div class="questionContainer">
-            <div class="subQuestionContainer">
-                <div class="question">
-                    <p>1. Do you regularly make new friends</p>
-                </div>
-
-                <div class="choiceContainer">
-                    <div class="subChoiceContainer">
-                        <p>Dislike</p>
+        <div class="subContainer">
+            <div class="textContainer"> 
+                <div class="subTextContainer">
+                    <div class="text">
+                        <p>Thank you for using our course recommendation!</p>
                     </div>
 
-                    <div class="subChoiceContainer">
-                        <div class="answer"></div>
-                        <div class="answer"></div>
-                        <div class="answer"></div>
+                    <div class="text1">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit sunt commodi ullam delectus laudantium repudiandae molestias consequuntur placeat aliquam architecto natus, excepturi odit numquam deserunt perferendis enim impedit at? Repellat?</p>
                     </div>
-                    
-                    <div class="subChoiceContainer">
-                        <p>Dislike</p>
+
+                    <div class="buttonContainer1">
+                        <button onclick="course()" class="button">See Result</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="submitContainer">
-                 <button onclick="course()" class="submitButton">Done</button>
+    <div class="courseContainer" style="display: none;">
+        <div class="courseContainer" style="background-color: none;">
+            <div class="subCourseContainer">
+                <div class="closeContainer">
+                    <div class="subCloseContainer">
+                        <img onclick="course()" class="closeButton" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+    
+                    <div class="textContainer2">
+                        <p>List of courses</p>
+                    </div>
+                </div>
+    
+                <div class="recommendContainer">
+                    <div class="subRecommendContainer">
+                        <div class="recommend">
+                            <p>Bachelor Science of Information Technology</p>
+                        </div>
+    
+                        <div class="addButton">
+                            <button onclick="addlist()" class="addtolist">Add to list</button>
+                        </div>
+                    </div>
+    
+                    <div class="subRecommendContainer">
+                        <div class="recommend">
+                            <p>Bachelor Science of Information Technology</p>
+                        </div>
+    
+                        <div class="addButton">
+                            <button onclick="addlist()" class="addtolist">Add to list</button>
+                        </div>
+                    </div>
+    
+                    <div class="subRecommendContainer">
+                        <div class="recommend">
+                            <p>Bachelor Science of Information Technology</p>
+                        </div>
+    
+                        <div class="addButton">
+                            <button onclick="addlist()" class="addtolist">Add to list</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -152,7 +166,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="/Capstone/assets/js/exploreCourses.js"></script>
     <script src="/Capstone/assets/js/dashboard.js"></script>
 </body>

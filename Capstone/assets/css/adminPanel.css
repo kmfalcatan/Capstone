@@ -340,6 +340,60 @@ a{
     cursor: pointer;
 }
 
+.buttonContainer2{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+}
+
+.button1{
+    height: 2rem;
+    width: 5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.15s;
+}
+
+.button2{
+    height: 2rem;
+    width: 5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: rgb(222,27,27);
+    border: solid rgb(222,27,27) 1px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-size: 1rem;
+}
+
+.button1:hover{
+    color: rgb(222,27,27);
+    border: solid rgb(222,27,27) 1px;
+    background-color: transparent ;
+}
+
+.button1:active{
+    transform: scale(0.9);
+}
+
+.button2:hover{
+    background-color: rgb(222,27,27);
+    color: rgb(233,233,233);
+}
+
+.button2:active{
+    transform: scale(0.9);
+}
+
 /*tablet*/
 @media only screen and (min-width: 601px){
     .subListContainer{
