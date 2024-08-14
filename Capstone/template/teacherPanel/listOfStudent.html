@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/Capstone/assets/css/courses.css">
+    <link rel="stylesheet" href="/Capstone/assets/css/teacherPanel.css">
 </head>
 <body>
     <div class="container">
@@ -24,21 +24,21 @@
         </div>
 
         <div class="subMenubarContainer">
-            <a href="/Capstone/template/adminPanel/adminPanel.html">
+            <a href="/Capstone/template/teacherPanel/adminPanel.html">
                 <div class="barContainer">
                     <p>List of student</p>
                 </div>
             </a>
 
-            <a href="/Capstone/template/adminPanel/courses.html">
+            <a href="/Capstone/template/teacherPanel/courses.html">
                 <div class="barContainer">
                     <p>Courses</p>
                 </div>
             </a>
 
-            <a href="/Capstone/template/adminPanel/feedback.html">
+            <a href="/Capstone/template/teacherPanel/listOfStudent.html">
                 <div class="barContainer">
-                    <p>List of feedback</p>
+                    <p>List of Approve</p>
                 </div>
             </a>
 
@@ -51,13 +51,17 @@
 
         <div class="filterContainer">
             <div class="textContainer">
-                <p>List of course</p>
+                <p>List of students</p>
             </div>
 
             <div class="subFilterContainer">
                 <select class="filter" name="" id="">
-                    <option value="">Choose a College</option>
+                    <option value="">Choose a status</option>
+                    <option value="">Approve</option>
+                    <option value="">Decline</option>
                 </select>
+
+                <input class="searchBar" type="text" name="" id="" placeholder="Search...">
             </div>
         </div>
 
@@ -65,7 +69,17 @@
             <div class="subListContainer">
                 <div class="nameContainer">
                     <div class="subNameContainer">
-                        <p>College of computing studies</p>
+                        <p>Khriz marr L. Falcatan</p>
+                    </div>
+
+                    <div class="averageContainer">
+                        <div class="grades">
+                            <p>Grade avg: 85</p>
+                        </div>
+
+                        <div class="grades">
+                            <p>CET avg: 85</p>
+                        </div>
                     </div>
                 </div>
 
@@ -88,13 +102,13 @@
                 <div class="infoContainer">
                     <div class="subInfoContainer">
                         <div class="info">
-                            <p>College of computing studies</p>
+                            <p>Khriz marr L. Falcatan</p>
                         </div>
                     </div>
     
-                    <div class="subInfoContainer1">
-                        <div class="info1">
-                            <p>Bachelor of science information technology</p>
+                    <div class="subInfoContainer">
+                        <div class="info">
+                            <p>kmfalcatan@gmail.com</p>
                         </div>
                     </div>
     
@@ -107,56 +121,28 @@
                         </div>
                     </div>
     
-                    <div class="subInfoContainer1">
-                        <div class="info1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti consectetur nobis eveniet quisquam odio magni aliquam blanditiis, quas sequi dolores, aperiam aliquid, porro maxime velit! Odio enim hic reiciendis!</p>
+                    <div class="subInfoContainer">
+                        <div class="info">
+                            <p>09999199228</p>
                         </div>
                     </div>
-
-                    <div class="closeContainer1">
-                        <button onclick="addlist1()" class="closeButton1">Edit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="addListContainer1" style="display: none;">
-        <div class="addListContainer" style="background-color: none;">
-            <div class="subAddListContainer">
-                <div class="closeContainer" style="margin-bottom: 1rem;">
-                    <div class="subCloseContainer">
-                        <img onclick="addlist1()" class="closeButton" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
-                    </div>
-                </div>
     
-                <div class="infoContainer">
                     <div class="subInfoContainer">
-                        <textarea name="" id="" class="info1">CCS</textarea>
+                        <div class="info">
+                            <p>Pasonanca</p>
+                        </div>
                     </div>
     
                     <div class="subInfoContainer1">
-                        <textarea class="info1" name="" id="">BSIT</textarea>
-                    </div>
-    
-                    <div class="subInfoContainer" style="column-gap: 1rem; width: 93%;" >
-                        <input type="text" class="info" value="80%">
-                        <input type="text" class="info" value="85%">
-                    </div>
-    
-                    <div class="subInfoContainer1">
-                        <textarea style="height: 10rem;" class="info1" name="" id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum veritatis hic exercitationem odio, nulla consectetur enim earum quae impedit reiciendis sit accusantium aliquid recusandae numquam et sunt aut! Dolorum, libero?</textarea>
-                    </div>
-
-                    <div class="closeContainer1">
-                        <button class="closeButton1">Save</button>
+                        <div class="info1">
+                            <p>Bachelor science of information techonology</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
     <script src="/Capstone/assets/js/exploreCourses.js"></script>
 </body>
 </html>
