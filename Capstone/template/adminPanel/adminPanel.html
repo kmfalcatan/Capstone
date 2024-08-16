@@ -49,7 +49,7 @@
             </div>
 
             <div class="subFilterContainer">
-                <button class="filter" style="width: 10rem;">Add teacher</button>
+                <button onclick="addlist1()" class="filter" style="width: 10rem;">Add teacher</button>
 
                 <input class="searchBar" type="text" name="" id="" placeholder="Search...">
             </div>
@@ -58,17 +58,13 @@
         <div class="listContainer">
             <div class="subListContainer">
                 <div class="nameContainer">
-                    <div class="subNameContainer">
+                    <div class="subNameContainer" style="margin-left: -3rem;">
                         <p>Khriz marr L. Falcatan</p>
                     </div>
 
                     <div class="averageContainer">
                         <div class="grades">
-                            <p>Grade avg: 85</p>
-                        </div>
-
-                        <div class="grades">
-                            <p>CET avg: 85</p>
+                            <p>Bachelor Science of Information Technology</p>
                         </div>
                     </div>
                 </div>
@@ -104,22 +100,10 @@
     
                     <div class="subInfoContainer" style="gap: 1rem;">
                         <div class="info" style="width: 10rem;">
-                            <p>Grade avg: 85</p>
+                            <p>Rank</p>
                         </div>
                         <div class="info" style="width: 10rem;">
-                            <p>CET avg: 85%</p>
-                        </div>
-                    </div>
-    
-                    <div class="subInfoContainer">
-                        <div class="info">
-                            <p>09999199228</p>
-                        </div>
-                    </div>
-    
-                    <div class="subInfoContainer">
-                        <div class="info">
-                            <p>Pasonanca</p>
+                            <p>Designation</p>
                         </div>
                     </div>
     
@@ -128,10 +112,55 @@
                             <p>Bachelor science of information techonology</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="addListContainer1" style="display: none;">
+        <div class="addListContainer" style="background-color: none;">
+            <div class="subAddListContainer">
+                <div class="closeContainer" style="margin-bottom: 1rem;">
+                    <div class="subCloseContainer">
+                        <img onclick="addlist1()" class="closeButton" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="infoContainer">
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter first name">
+                    </div>
+                    
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter middle name">
+                    </div>
+                    
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter last name">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter Email">
+                    </div>
+    
+                    <div class="subInfoContainer" style="gap: 1rem; width: 93%;">
+                        <input type="text" class="info" placeholder="Enter Rank">
+                        <input type="text" class="info" placeholder="Enter designation">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Password">
+                    </div>
+    
+                    <div class="subInfoContainer">
+                        <select class="info" name="" id="" style="width: 92%;">
+                            <option value="Choose a course">Choose a course</option>
+                        </select>
+                    </div>
 
                     <div class="buttonContainer2">
-                        <button class="button1">Approve</button>
-                        <button class="button2">Decline</button>
+                        <button class="button1">Add</button>
+                        <button class="button2">Cancel</button>
                     </div>
                 </div>
             </div>

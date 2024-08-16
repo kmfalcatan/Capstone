@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/Capstone/assets/css/courses.css">
+    <link rel="stylesheet" href="/Capstone/assets/css/setting.css">
 </head>
 <body>
     <div class="container">
@@ -55,28 +55,56 @@
             </a>
         </div>
 
-        <div class="filterContainer">
-            <div class="textContainer">
-                <p>List of course</p>
-            </div>
-
-            <div class="subFilterContainer">
-                <select class="filter" name="" id="">
-                    <option value="">Choose a College</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="listContainer">
-            <div class="subListContainer">
-                <div class="nameContainer">
-                    <div class="subNameContainer">
-                        <p>College of computing studies</p>
-                    </div>
+        <div class="subContainer">
+            <div class="settingContainer" onclick="addlist()">
+                <div class="subSettingContainer">
+                    <img class="person" src="/Capstone/assets/img/image-removebg-preview1.png" alt="">
                 </div>
 
-                <div class="viewButtonContainer">
-                    <button onclick="addlist()" class="viewButton">View</button>
+                <div class="textContainer4">
+                    <p>Profile</p>
+                </div>
+            </div>
+
+            <div class="settingContainer" onclick="login()">
+                <div class="subSettingContainer">
+                    <img class="person" src="/Capstone/assets/img/image-removebg-preview (2).png" alt="">
+                </div>
+
+                <div class="textContainer4">
+                    <p>Change password</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loginFormContainer" style="display: none;">
+        <div class="loginFormContainer" style="background-color: transparent;">
+            <div class="subLoginFormContainer">
+                <div class="closeContainer">
+                    <div class="subCloseContainer">
+                        <img onclick="login()" class="close" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+    
+                    <div class="loginTextContainer">
+                        <p>Change password</p>
+                    </div>
+                </div>
+    
+                <div class="inputContainer">
+                    <div class="subInputContainer">
+                        <input class="inputEmail" type="email" placeholder="Enter your old password:">
+                    </div>
+    
+                    <div class="subInputContainer">
+                        <input class="inputEmail" type="password" placeholder="Enter your new password:">
+                    </div>
+    
+                    <div class="subInputContainer">
+                        <a href="/Capstone/template/adminPanel/adminPanel.html">
+                            <button class="loginButton1">Save</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,33 +122,33 @@
                 <div class="infoContainer">
                     <div class="subInfoContainer">
                         <div class="info">
-                            <p>College of computing studies</p>
+                            <p>Khriz marr L. Falcatan</p>
                         </div>
                     </div>
     
-                    <div class="subInfoContainer1">
-                        <div class="info1">
-                            <p>Bachelor of science information technology</p>
+                    <div class="subInfoContainer">
+                        <div class="info">
+                            <p>kmfalcatan@gmail.com</p>
                         </div>
                     </div>
     
                     <div class="subInfoContainer" style="gap: 1rem;">
                         <div class="info" style="width: 10rem;">
-                            <p>Grade avg: 85</p>
+                            <p>Rank</p>
                         </div>
                         <div class="info" style="width: 10rem;">
-                            <p>CET avg: 85%</p>
+                            <p>Designation</p>
                         </div>
                     </div>
     
                     <div class="subInfoContainer1">
                         <div class="info1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti consectetur nobis eveniet quisquam odio magni aliquam blanditiis, quas sequi dolores, aperiam aliquid, porro maxime velit! Odio enim hic reiciendis!</p>
+                            <p>Bachelor science of information techonology</p>
                         </div>
                     </div>
 
-                    <div class="closeContainer1">
-                        <button onclick="addlist1()" class="closeButton1">Edit</button>
+                    <div class="buttonContainer2">
+                        <button class="button1" onclick="addlist1()">Edit</button>
                     </div>
                 </div>
             </div>
@@ -138,31 +166,35 @@
     
                 <div class="infoContainer">
                     <div class="subInfoContainer">
-                        <textarea name="" id="" class="info1">CCS</textarea>
+                        <input type="text" class="info" placeholder="Enter first name">
+                    </div>
+                    
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter middle name">
+                    </div>
+                    
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter last name">
                     </div>
     
-                    <div class="subInfoContainer1">
-                        <textarea class="info1" name="" id="">BSIT</textarea>
+                    <div class="subInfoContainer">
+                        <input type="text" class="info" placeholder="Enter Email">
                     </div>
     
-                    <div class="subInfoContainer" style="column-gap: 1rem; width: 93%;" >
-                        <input type="text" class="info" value="80%">
-                        <input type="text" class="info" value="85%">
-                    </div>
-    
-                    <div class="subInfoContainer1">
-                        <textarea style="height: 10rem;" class="info1" name="" id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum veritatis hic exercitationem odio, nulla consectetur enim earum quae impedit reiciendis sit accusantium aliquid recusandae numquam et sunt aut! Dolorum, libero?</textarea>
+                    <div class="subInfoContainer" style="gap: 1rem; width: 93%;">
+                        <input type="text" class="info" placeholder="Enter Rank">
+                        <input type="text" class="info" placeholder="Enter designation">
                     </div>
 
-                    <div class="closeContainer1">
-                        <button class="closeButton1">Save</button>
+                    <div class="buttonContainer2">
+                        <button class="button1">Save</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     
     <script src="/Capstone/assets/js/exploreCourses.js"></script>
+    <script src="/Capstone/assets/js/loginForm.js"></script>
 </body>
 </html>
