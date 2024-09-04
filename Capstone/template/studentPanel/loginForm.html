@@ -73,11 +73,67 @@
                     <div class="subInputContainer">
                         <input class="inputEmail" type="password" placeholder="Enter your password:">
                     </div>
+
+                    <div class="subInputContainer" style="height: 1rem; justify-content: left;">
+                        <p onclick="forgot()" class="forgotContainer" style="padding-left: 1rem;">Forgot password?</p>
+                    </div>
     
                     <div class="subInputContainer">
                         <a href="/Capstone/template/adminPanel/adminPanel.html">
                             <button class="loginButton1">Login</button>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loginFormContainer forgot" style="display: none;">
+        <div class="loginFormContainer" style="background-color: transparent;">
+            <div class="subLoginFormContainer">
+                <div class="closeContainer">
+                    <div class="subCloseContainer">
+                        <img onclick="forgot()" class="close" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="inputContainer">
+                    <div class="subInputContainer">
+                        <input class="inputEmail" type="password" placeholder="Enter your new password:">
+                    </div>
+
+                    <div class="subInputContainer">
+                        <input class="inputEmail" type="password" placeholder="Enter again your new password:">
+                    </div>
+
+                    <div class="subInputContainer">
+                        <input class="inputEmail" type="email" placeholder="Enter your email to send OTP:">
+                    </div>
+    
+                    <div class="subInputContainer">
+                        <button class="loginButton1" onclick="otp()">Send OTP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loginFormContainer OtpContainer" style="display: none;">
+        <div class="loginFormContainer" style="background-color: transparent;">
+            <div class="subLoginFormContainer">
+                <div class="closeContainer">
+                    <div class="subCloseContainer">
+                        <img onclick="otp()" class="close" src="/Capstone/assets/img/Screenshot 2024-07-17 221356.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="inputContainer">
+                    <div class="subInputContainer">
+                        <input class="inputEmail" type="text" placeholder="Enter your OTP code:">
+                    </div>
+    
+                    <div class="subInputContainer">
+                        <button class="loginButton1">Submit</button>
                     </div>
                 </div>
             </div>
