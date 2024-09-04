@@ -27,3 +27,23 @@ function error(){
         errorButton .style.display = 'none'
     }
 }
+
+function forgot(){
+    const errorButton = document.querySelector(' .forgot');
+
+    if(errorButton.style.display === 'none'){
+        errorButton.style.display = 'block';
+    } else{
+        errorButton .style.display = 'none'
+    }
+}
+
+function otp(){
+    const errorButton = document.querySelector(' .OtpContainer');
+
+    if(errorButton.style.display === 'none'){
+        errorButton.style.display = 'block';
+    } else{
+        errorButton .style.display = 'none'
+    }
+}
